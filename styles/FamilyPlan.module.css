@@ -1,0 +1,149 @@
+.container,
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.background,
+.text_footer {
+    width: 1550px;
+    text-align: center;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.block {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.top {
+    background-color: var(--yellow);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.top h2 {
+    font-size: 2.2rem;
+    color: var(--orange);
+    padding: 1rem;
+    padding-top: 2rem;
+    text-shadow: -1px 1px 1px var(--peach);
+}
+
+.mid {
+    background-color: var(--orange);
+}
+
+.mid h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-shadow: -1px 1px 4px var(--purple), 1px -1px 4px var(--purple);
+}
+
+.bot {
+    background-color: var(--yellow);
+    padding-bottom: 2rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.bot h3 {
+    color: var(--orange);
+    font-size: 1.5rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -1px 1px 1px var(--peach);
+}
+
+.bot a {
+    border: 2px solid var(--darkred);
+    background-color: var(--red);
+    padding: 0.6rem 2rem 0.6rem 2rem;
+}
+
+.bot a:hover {
+    background-color: var(--darkred);
+}
+
+.footer {
+    height: 150px;
+}
+
+.text_footer {
+    position: relative;
+}
+
+.p {
+    margin-top: 4rem;
+}
+
+@media (max-width: 1100px) {
+    .block {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .top h2 {
+        font-size: 2.2rem;
+    }
+
+    .mid h1 {
+        font-size: 2.6rem;
+    }
+
+    .bot h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 710px) {
+
+    .block {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .top h2 {
+        font-size: 1.5rem;
+    }
+
+    .mid h1 {
+        font-size: 1.6rem;
+    }
+
+    .bot h3 {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .block {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .top h2 {
+        font-size: 1.2rem;
+        padding-top: 1.5rem;
+    }
+
+    .mid h1 {
+        font-size: 1.3rem;
+    }
+
+    .bot h3 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .bot {
+        padding-bottom: 2rem;
+    }
+}

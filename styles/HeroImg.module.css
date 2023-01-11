@@ -1,0 +1,10 @@
+.container {
+    background-image: url(../public/img/hero.png);
+    background-color: aquamarine;
+    width: 1275px;
+    height: 425px;
+    border-radius: 2rem;
+    margin: auto;
+    text-align: center;
+    font-size: 8rem;
+}

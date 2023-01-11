@@ -1,0 +1,188 @@
+.container {
+    position: relative;
+    top: 0;
+    height: 112px;
+    width: 100vw;
+    z-index: 999;
+    background-color: white;
+}
+
+.container a {
+    transform: none;
+    box-shadow: none;
+}
+
+.login_container {
+    display: block;
+    transition: 0.3s;
+    height: 40px;
+    color: white;
+    background-color: var(--orange);
+    border-bottom: 2px solid var(--blue);
+}
+
+.login_row {
+    padding: 0.5rem 4rem 0 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.login > a {
+    display: flex;
+    flex-direction: row;
+}
+
+.login p {
+    padding: 0.1rem;
+}
+
+.navbar_container {
+    top: 40px;
+    position: fixed;
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+}
+
+.navbar > ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    outline: none;
+    list-style-type: none;
+}
+
+.navbar > input {
+    display: none;
+}
+
+.logo {
+    position: relative;
+    height: 72px;
+    width: 220px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.cart span {
+    font-size: 2.5rem;
+}
+
+.hamburger {
+    display: none;
+    user-select: none;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        height: 72px;
+    }
+
+    .login_container {
+        display: none;
+    }
+
+    .navbar_container {
+        top: 0;
+        justify-content: space-between;
+    }
+
+    .navbar > ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--yellow);
+        overflow: hidden;
+        border-radius: 0 1rem 1rem 0;
+        top: 70px;
+        width: 0;
+        padding-top: 1rem;
+        height: 400px;
+        transition: 0.3s;
+        gap: 1rem;
+    }
+
+    .navbar li {
+        padding-left: 1rem;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: block;
+        font-size: 48px;
+        top: 12px;
+        height: 40px;
+        width: 50px;
+        margin-left: 0.5rem;
+        z-index: 999;
+    }
+
+    .top_bar {
+        position: absolute;
+        transition: 0.3s;
+        border-radius: 2rem;
+        height: 4px;
+        width: 30px;
+        top: 10px;
+        left: 10px;
+        background-color: black;
+    }
+
+    .bot_bar {
+        position: absolute;
+        transition: 0.3s;
+        border-radius: 2rem;
+        height: 4px;
+        width: 30px;
+        bottom: 10px;
+        left: 10px;
+        background-color: black;
+    }
+
+    .navbar li {
+        position: relative;
+    }
+
+    .navbar a {
+        margin-left: 1rem;
+    }
+
+    .navbar {
+        order: 1;
+    }
+
+    .logo {
+        margin-left: 3rem;
+        order: 2;
+    }
+
+    .cart {
+        position: relative;
+        margin-right: 0.5rem;
+        order: 3;
+    }
+
+}

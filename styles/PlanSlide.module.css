@@ -1,0 +1,80 @@
+.container {
+    flex: 1;
+    user-select: none;
+    min-width: 250px;
+    max-width: 280px;
+    height: 400px;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px #999;
+    color: var(--peach);
+}
+
+.container > h1 {
+    margin-top: 0.5rem;
+    font-size: 3.6rem;
+    font-family: 'Kanit';
+}
+
+.container span {
+    font-size: 1.5rem;
+}
+
+.container ul {
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 2.2rem;
+    max-width: 145px;
+    text-align: left;
+    list-style-type: circle;
+    list-style-position: outside;
+    height: 20%;
+    font-family: 'Kanit';
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.container > a {
+    border: 2px solid var(--darkred);
+    background-color: var(--red);
+    color: white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.container > a:hover {
+    background-color: var(--darkred);
+}
+
+.container > p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #444;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header {
+    position: relative;
+    background-color: var(--orange);
+    height: 100px;
+    border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.header > h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.header > p {
+    position: relative;
+    bottom: -1.4rem;
+    font-size: 0.9rem;
+    color: white;
+    font-family: 'Kanit';
+}

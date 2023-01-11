@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid white;
+}
+
+.background {
+    position: relative;
+    text-align: center;
+    width: 1280px;
+    padding: 2em;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+    text-shadow: -1px 1px 2px var(--purple), 1px -1px 2px var(--purple);
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    height: 200px;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card h4 {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+
+.card p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.one {
+    background-color: var(--pink);
+}
+
+.two {
+    background-color: var(--orange);
+}
+
+.three {
+    background-color: var(--blue);
+}
+
+.four {
+    background-color: var(--purple);
+}
+
+.icon {
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+
+@media (max-width: 460px) {
+    .card {
+        position: relative;
+        width: 250px;
+        height: 180px;
+        font-size: 1.2rem;
+    }
+
+    .container h1 {
+        font-size: 2.5rem;
+    }
+}

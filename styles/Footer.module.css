@@ -1,0 +1,144 @@
+.container {
+    background-color: white;
+    padding-top: 50px;
+}
+
+.container a {
+    transform: none;
+    box-shadow: none;
+}
+
+.container a:hover {
+    cursor: pointer;
+}
+
+
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    padding: 1rem;
+}
+
+.logo a {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter {
+    margin: 2rem 0 2rem 0;
+}
+
+.newsletter p {
+    line-height: 18px;
+    font-size: 18px;
+}
+
+.newsletter label {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.email {    
+    width: 200px;
+    height: 50px;
+    border-radius: 0.75rem;
+    border: 1px solid #666;
+}
+
+.submit {
+    background-color: var(--orange);
+    border: 1px solid var(--red);
+    margin-left: 0.5rem;
+    width: 200px;
+    height: 50px;
+    border-radius: 0.75rem;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: var(--purple);
+    border: 1px solid black;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.main ul {
+    margin: 1rem 0 1rem 0;
+    list-style: none;
+}
+
+.links a {
+    margin-left: 0;
+}
+
+.links li {
+    padding: 0.5rem;
+}
+
+.header {
+    color: var(--purple);
+}
+
+.name {
+    position: absolute;
+    font-size: 12px;
+    margin: 0 2rem 2rem 0;
+    right: 0;
+    bottom: 0;
+}
+
+.foot {
+    display: flex;
+    align-content: center;
+    min-height: 50px;
+    background-color: var(--orange);
+}
+
+.foot > ul {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    list-style-position: outside;
+}
+
+.foot li {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0 1rem 0 1rem;
+}
+
+@media (max-width: 1050px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main ul {
+        margin-left: 30px;
+    }
+
+    .foot a {
+        margin: 0;
+    }
+
+    .foot > ul {
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        margin: 0;
+        margin-left: 2rem;
+    }
+
+    .foot li {
+        margin: 0.5rem;
+    }
+}

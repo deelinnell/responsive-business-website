@@ -1,0 +1,106 @@
+.container {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    height: 1100px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background {
+    position: relative;
+    max-width: 1400px;
+    height: 600px;
+    margin: auto;
+    background-image: linear-gradient(to right, var(--orange), var(--orange) , var(--blue));
+    border-radius: 2rem;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.background h1 {
+    font-size: 2.3rem;
+    padding-top: 4rem;
+    text-shadow: 1px 1px 4px var(--blue);
+}
+
+.background h2 {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 4px var(--blue);
+}
+
+.phones_container {
+    position: relative;
+    max-width: 1300px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    transition: 0.3s;
+    gap: 2rem;
+    padding: 0 2rem 0 2rem;
+    top: -500px;
+    color: #666;
+}
+
+.footer {
+    position: relative;
+    top: -500px;
+    color: #666;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.footer a {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--darkred);
+    color: white;
+    background-color: var(--red);
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+}
+
+.footer a:hover {
+    color: var(--hotpink);
+    background-color: white;
+    border: 2px solid var(--hotpink);
+    box-shadow: 0 5px 10px var(--darkred);
+}
+
+.break {
+    display: none;
+    height: 0;
+}
+
+@media (max-width: 1050px) {
+    .phones_container {
+        left: 284px;
+    }
+    .background h1 {
+        padding-top: 2rem;
+        font-size: 2.1rem;
+        line-height: 120%;
+    }
+    .background h2 {
+        font-size: 1.2rem;
+    }
+
+    .break {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .background h1 {
+        padding-top: 2.5rem;
+        font-size: 1.7rem;
+    }
+    .background h2 {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,189 @@
+.container {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.vertical_space {
+    position: relative;
+    flex: 1;
+}
+
+.vertical_space_white {
+    background-color: white;
+    width: 120px;
+}
+
+.content {
+    background-color: none;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.content p {
+    margin: 1rem;
+}
+
+.header {
+    max-width: fit-content;
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--yellow);
+    border-radius: 1rem;
+    box-shadow: 0 0 15px var(--purple) inset;
+}
+
+.container h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.container h1 > span {
+    color: var(--purple);
+}
+
+.container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+
+.num_lines {
+    margin: 2rem 0 2rem 0;
+}
+
+.container p {
+    font-size: 1.2rem;
+}
+
+.num_lines {
+    background-color: none;
+}
+
+.lines_picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--yellow);
+    box-shadow: 0 0 15px var(--purple) inset;
+    border-radius: 0.5rem;
+    max-width: 400px;
+    height: 50px;
+    margin: auto;
+}
+
+.lines_picker > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: stretch;
+    height: stretch;
+    border-radius: 0.5rem;
+}
+
+.calculate {
+    margin: 1rem;
+}
+
+.spending {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--yellow);
+    box-shadow: 0 0 15px var(--purple) inset;
+    border-radius: 0.5rem;
+    max-width: 400px;
+    height: 50px;
+    margin: auto;
+}
+
+.spending > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: stretch;
+    height: stretch;
+    border-radius: 0.5rem;
+}
+
+.data_container h4 {
+    padding-top: 1rem;
+    font-size: 18px;
+}
+
+.data_num {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--yellow);
+    box-shadow: 0 0 15px var(--purple) inset;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.data_num :nth-child(1) {
+    border-radius: 1rem 0 0 1rem;
+}
+.data_num :nth-child(4) {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.data_num > div {
+    background-color: var(--yellow);
+}
+
+.container a {
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--blue);
+    color: white;
+    background-color: var(--purple);
+    bottom: 0;
+    border-radius: 0.5rem;
+    padding: 0.6rem 3rem 0.6rem 3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.container a:hover {
+    box-shadow: 0 5px 10px #999;
+    bottom: 5px;
+    background-color: var(--blue);
+    border: 2px solid #444;
+}
+
+@media (max-width: 1200px) {
+    .vertical_space_white {
+        width: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .content {
+        margin: 2rem 1rem;
+    }
+    .content h1 {
+        font-size: 26px;
+    }
+    .content h2 {
+        font-size: 14px;
+    }
+    .calculate a {
+        padding: 0.6rem 1rem 0.6rem 1rem;
+    }
+    .calculate p,
+    .data_container p {
+        font-size: 14px;
+    }
+    .data_num h4 {
+        font-size: 16px;
+    }
+    .data_num p {
+        font-size: 14px;
+    }
+}
