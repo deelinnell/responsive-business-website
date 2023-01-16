@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import horse from '../public/images/horse.png'
 import styles from '../styles/LandingImg.module.css'
 
 export default function LandingImg() {
@@ -13,7 +14,7 @@ export default function LandingImg() {
                         <div className={styles.content} >
                             <div className={styles.img_container} id="landing_img">
                                 <Image
-                                    src={'/../public/img/horse.png'}
+                                    src={horse}
                                     alt="none"
                                     fill
                                     sizes="max-width: 330px"
