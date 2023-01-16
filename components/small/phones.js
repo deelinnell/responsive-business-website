@@ -1,5 +1,5 @@
 
-const imgs = '../public/img/phones/'
+const imgs = '/../public/img/phones/'
 const phones = [
     {
         name: 'Apple iPhone 14 Plus',
