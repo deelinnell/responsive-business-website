@@ -2,6 +2,8 @@ import styles from '../styles/SavingsCalculator.module.css'
 
 if (typeof window !== "undefined") {
 
+    const color = `${styles.highlighted}`
+
     let lines = document.querySelector(`.${styles.lines_picker}`),
         linesArray = Array.from(lines.children),
         spending = document.querySelector(`.${styles.spending}`),
@@ -9,36 +11,24 @@ if (typeof window !== "undefined") {
         data = document.querySelector(`.${styles.data_num}`),
         dataArray = Array.from(data.children)
 
-    linesArray.forEach((line, index) => {
-        line.onclick = () => linesOnClick(index)
-    })
-
-    spendingArray.forEach((num, index) => {
-        num.onclick = () => spendingOnClick(index)
-    })
-
-    dataArray.forEach((num, index) => {
-        num.onclick = () => dataOnClick(index)
-    })
-
-    function linesOnClick(index) {
-        linesArray.forEach(line => line.style.backgroundColor = 'transparent')
-        linesArray[index].style.backgroundColor = 'var(--purple)'
+    function highlightOnclick(array) {
+        array.forEach((num, index) => {
+            num.onclick = () => highlight(array, index)
+        })
     }
 
-    function spendingOnClick(index) {
-        spendingArray.forEach(num => num.style.backgroundColor = 'transparent')
-        spendingArray[index].style.backgroundColor = 'var(--purple)'
+    function highlight(array, index) {
+        array.forEach(index => index.classList.remove(color))
+        array[index].classList.add(color)
     }
 
-    function dataOnClick(index) {
-        dataArray.forEach(num => num.style.backgroundColor = 'transparent')
-        dataArray[index].style.backgroundColor = 'var(--purple)'
-    }
+    highlightOnclick(linesArray)
+    highlightOnclick(spendingArray)
+    highlightOnclick(dataArray)
 
-    linesArray[0].style.backgroundColor = 'var(--purple)'
-    spendingArray[0].style.backgroundColor = 'var(--purple)'
-    dataArray[0].style.backgroundColor = 'var(--purple)'
+    linesArray[0].classList.add(color)
+    spendingArray[0].classList.add(color)
+    dataArray[0].classList.add(color)
 }
 
 export default function SavingsCalculator() {

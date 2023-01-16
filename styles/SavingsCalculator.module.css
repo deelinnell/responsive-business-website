@@ -58,6 +58,11 @@
     font-size: 1.2rem;
 }
 
+.highlighted {
+    background: var(--purple);
+    background: linear-gradient(to top, var(--darkpurple) 10%, var(--purple) 90%, var(--darkpurple) 100%);
+}
+
 .num_lines {
     background-color: none;
 }
@@ -68,10 +73,18 @@
     justify-content: space-around;
     background-color: var(--yellow);
     box-shadow: 0 0 15px var(--purple) inset;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     max-width: 400px;
     height: 50px;
     margin: auto;
+}
+
+.lines_picker :first-child {
+    border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.lines_picker :last-child {
+    border-radius: 0 0.75rem 0.75rem 0;
 }
 
 .lines_picker > div {
@@ -80,32 +93,10 @@
     justify-content: center;
     width: stretch;
     height: stretch;
-    border-radius: 0.5rem;
 }
 
 .calculate {
     margin: 1rem;
-}
-
-.spending {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: var(--yellow);
-    box-shadow: 0 0 15px var(--purple) inset;
-    border-radius: 0.5rem;
-    max-width: 400px;
-    height: 50px;
-    margin: auto;
-}
-
-.spending > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: stretch;
-    height: stretch;
-    border-radius: 0.5rem;
 }
 
 .data_container h4 {
@@ -117,21 +108,46 @@
     display: flex;
     flex-direction: row;
     background-color: var(--yellow);
-    box-shadow: 0 0 15px var(--purple) inset;
+    box-shadow: 0 0 25px var(--purple) inset;
     border-radius: 1rem;
     width: fit-content;
     margin: auto;
 }
 
-.data_num :nth-child(1) {
+.data_num :first-child {
     border-radius: 1rem 0 0 1rem;
 }
-.data_num :nth-child(4) {
+
+.data_num :last-child {
     border-radius: 0 1rem 1rem 0;
 }
 
-.data_num > div {
+.spending {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: var(--yellow);
+    box-shadow: 0 0 15px var(--purple) inset;
+    border-radius: 0.75rem;
+    max-width: 400px;
+    height: 50px;
+    margin: auto;
+}
+
+.spending :first-child {
+    border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.spending :last-child {
+    border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.spending > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: stretch;
+    height: stretch;
 }
 
 .container a {
@@ -141,7 +157,7 @@
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    border: 2px solid var(--blue);
+    border: 2px solid var(--darkpurple);
     color: white;
     background-color: var(--purple);
     bottom: 0;
@@ -154,7 +170,7 @@
     box-shadow: 0 5px 10px #999;
     bottom: 5px;
     background-color: var(--blue);
-    border: 2px solid #444;
+    border: 2px solid var(--purple);
 }
 
 @media (max-width: 1200px) {

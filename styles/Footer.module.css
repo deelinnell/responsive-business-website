@@ -12,8 +12,6 @@
     cursor: pointer;
 }
 
-
-
 .main {
     position: relative;
     display: flex;
@@ -45,6 +43,9 @@
 .email {    
     width: 200px;
     height: 50px;
+    font-size: 12pt;
+    margin-top: 18px;
+    padding: 10px;
     border-radius: 0.75rem;
     border: 1px solid #666;
 }

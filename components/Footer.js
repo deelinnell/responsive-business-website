@@ -17,9 +17,8 @@ export default function Footer() {
                     </div>
                     <p>Want to learn more?</p>
                     <p>Sign up for our newsletter!</p>
-                    <label for="email">Email Address:</label>
                     <form>
-                        <input type='email' className={styles.email} id='newsletter_email' name='email' placeholder='e-mail' />
+                        <input type='email' className={styles.email} id='newsletter_email' name='email' placeholder='E-mail Address: ' />
                         <button type='submit' className={styles.submit} id='newsletter_submit' value='Submit'>Subscribe</button>
                     </form>
                 </div>

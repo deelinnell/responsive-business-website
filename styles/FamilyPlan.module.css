@@ -25,6 +25,7 @@
 .top {
     background-color: var(--yellow);
     border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: 0 0 15px var(--purple) inset;
 }
 
 .top h2 {
@@ -36,7 +37,8 @@
 }
 
 .mid {
-    background-color: var(--orange);
+    background: var(--orange);
+    background: linear-gradient(to top, var(--darkorange) 0%, var(--orange) 80%, var(--darkorange) 100%);
 }
 
 .mid h1 {
@@ -49,6 +51,7 @@
     background-color: var(--yellow);
     padding-bottom: 2rem;
     border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 0 15px var(--purple) inset;
 }
 
 .bot h3 {

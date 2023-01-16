@@ -12,7 +12,9 @@ body {
   background-color: var(--blue);
   --blue: #7c558f;
   --purple: #974363;
+  --darkpurple: #812f4d;
   --orange: #f4684d;
+  --darkorange: #e94d2e;
   --peach: #ff9671;
   --pink: #df4559;
   --hotpink: #f53a88;
@@ -114,5 +116,3 @@ a:hover {
 .corner_botRight:before {
     border-radius:0 0 50% 0;
 }
-
-/* --- CORNERS --- */
