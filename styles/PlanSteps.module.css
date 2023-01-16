@@ -45,6 +45,11 @@
     padding-right: 1.5rem;
 }
 
+.card .icon {
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+
 .one {
     background-color: var(--pink);
 }
@@ -59,11 +64,6 @@
 
 .four {
     background-color: var(--purple);
-}
-
-.icon {
-    font-size: 5rem;
-    padding-top: 2rem;
 }
 
 @media (max-width: 460px) {
