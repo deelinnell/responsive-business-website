@@ -45,7 +45,7 @@
     padding-right: 1.5rem;
 }
 
-.card .icon {
+.card > .icon {
     font-size: 5rem;
     padding-top: 2rem;
 }
