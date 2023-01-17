@@ -1,5 +1,5 @@
 
-const link = '/../public/images/'
+const link = '/../public/img/'
 
 const phones = [
     {
