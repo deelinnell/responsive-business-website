@@ -1,7 +1,7 @@
 {
   "name": "cell-website",
   "version": "0.1.0",
-  "homepage": "https://deelinnell.github.io/responsive-business-website",
+  "homepage": "https://responsive-business-website.vercel.app/",
   "private": true,
   "scripts": {
     "dev": "next dev",
