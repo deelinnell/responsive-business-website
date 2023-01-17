@@ -87,7 +87,7 @@ export default function PhoneCarousel() {
             </div>
             <div className={styles.phones_container}>
                 {phones.map((phone, index) => {
-                    return <PhoneSlide phone={phone} key={index} />
+                    return <PhoneSlide onclick={console.log(phone)} phone={phone} key={index} />
                 })}
             </div>
             <div className={styles.footer}>
