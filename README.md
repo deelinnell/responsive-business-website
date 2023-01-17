@@ -1,34 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my first attempt at a large scale website that could theoretically be used for an actual buisness. Modern websites seem to be trending more and more towards having minimal / open looking websites and I've tried to keep that, but also wanting it to be unique and stand out. One interesting feature is a static picture that is hidden most the time by a white background, but several of the components have a window so the picture can be seen as you scroll.
 
-## Getting Started
+I've also kept responsiveness in mind by implementing the typical features like media query, flexbox / grid, and also a few built in sliders with cards. I've only finished the home page, but I'm planning on add many more pages to make it function like a useable website that a business would be happy to use. I've learned a lot about components so far and also about planning ahead so you're making maximum use of the tools available with react / nextjs.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Not much as been done with state yet, but I'm planning on adding user login in with a shopping cart type feature and data on the user that can be updated or changed. So far making this has given me more of an appreciation for how much time and effort is put into making a large scale website, and I don't even have the pressure of the thought that an actual business would be using this website one day.
