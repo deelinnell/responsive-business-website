@@ -1,4 +1,4 @@
-BUSINESS-WEBSITE
+***MY-RESPONSIVE-BUSINESS-WEBSITE***
 
 This is my first attempt at a large scale website that could theoretically be used for an actual buisness. Modern websites seem to be trending more and more towards having minimal / open looking websites and I've tried to keep that, but also wanting it to be unique and stand out. One interesting feature is a static picture that is hidden most the time by a white background, but several of the components have a window so the picture can be seen as you scroll.
 
