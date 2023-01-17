@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import horse from '../public/img/horse.png'
+import horse from '../public/static/images/horse.png'
 import styles from '../styles/LandingImg.module.css'
 
 export default function LandingImg() {

@@ -1,6 +1,6 @@
-import iphone from '../../public/img/iPhone_14_Plus_Red.png'
-import pixel from '../../public/img/pixel_7.png'
-import onePlus from '../../public/img/Samsung-Galaxy-A32-5G.png'
+import iphone from '../../public/static/images/iPhone_14_Plus_Red.png'
+import pixel from '../../public/static/images/pixel_7.png'
+import onePlus from '../../public/static/images/Samsung-Galaxy-A32-5G.png'
 
 const phones = [
     {

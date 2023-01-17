@@ -1,5 +1,4 @@
 import styles from '../../styles/PhoneSlide.module.css'
-import pixel from '../../public/img/pixel_7.png'
 import Image from 'next/image'
 
 export default function PhoneSlide({ phone }) {
@@ -8,7 +7,7 @@ export default function PhoneSlide({ phone }) {
         <div className={styles.container}>
             <div className={styles.img_container}>
                 <Image src={phone.img}
-                    alt={pixel}
+                    alt='none'
                     fill
                     sizes='max-height: 220px'
                 />
