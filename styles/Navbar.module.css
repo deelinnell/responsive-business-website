@@ -2,7 +2,7 @@
     position: relative;
     top: 0;
     height: 112px;
-    width: 100vw;
+    width: 100%;
     z-index: 999;
     background-color: white;
 }
