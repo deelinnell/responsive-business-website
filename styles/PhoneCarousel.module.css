@@ -1,5 +1,6 @@
 .container {
     position: relative;
+    margin-top: 50px;
     margin: auto;
     background-color: white;
     height: 1100px;
